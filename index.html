@@ -11,7 +11,8 @@
     <h1 class="heading">Expense Calculator</h1>
     <div class="container">
       <h3 class="greet">
-        Welcome, <input type="text" placeholder="Enter Your Name.." />
+        Welcome,
+        <input id="name-input" type="text" placeholder="Enter Your Name.." />
       </h3>
       <form>
         <div class="double">
@@ -30,14 +31,21 @@
         </div>
         <div class="double">
           <div class="form-stats">
-            <input type="checkbox" />
-            <label for="">Payment Complete</label>
+            <input id="status-input" type="checkbox" />
+            <label for="status-input">Payment Complete</label>
           </div>
           <button class="add-btn">Add</button>
         </div>
       </form>
       <!-- total section -->
       <div class="total">Total Expense: <span id="total-info">0</span> $</div>
+      <div class="select">
+        <select id="filter-select">
+          <option value="all">All</option>
+          <option value="payed">Payed</option>
+          <option value="not-payed">Not Payed</option>
+        </select>
+      </div>
       <!-- list -->
       <div class="list"></div>
     </div>

@@ -124,6 +124,12 @@ input {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   padding: 5px 10px;
   border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.fall {
+  transform: translateY(100px) rotateZ(20deg);
+  opacity: 0;
 }
 
 .buttons {
@@ -135,4 +141,38 @@ input {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+.expense h2:nth-child(1),
+.expense h2:nth-child(2) {
+  color: red;
+}
+
+.payed {
+  opacity: 0.7;
+}
+
+.payed h2:nth-child(1),
+.payed h2:nth-child(2) {
+  text-decoration: line-through;
+  color: green;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  font-size: 14px;
+  border: 1px solid #333;
+  text-align: right;
+  font-family: "Montserrat";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  background-size: 1.2em;
+  /* select reset */
+  outline: none;
+  appearance: none;
+  box-shadow: none;
 }

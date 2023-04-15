@@ -1,9 +1,15 @@
-<h1>Expense Calculator</h1>
+# Expense Calculator App
 
-<h2>Used Technologies</h2>
+## Description
 
-<p>HTML5</p>
-<p>CSS3</p>
-<p>JavaScript</p>
+A simple javascript app created to calculate expense.
 
-<h3>README will be add</h3>
+### Technologies
+
+- HTML5
+- CSS3
+- JAVASCRIPT
+
+# Expense Calculator App View
+
+<img src="images/screen-view.gif">
